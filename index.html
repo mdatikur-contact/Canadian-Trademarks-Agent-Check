@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Agent Check</title>
+  <style>
+    body {
+      padding: 20px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 13px;
+    }
+    th, td {
+      padding: 8px;
+      text-align: left;
+      border: 1px solid #ddd;
+    }
+    button {
+      padding: 10px 15px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    textarea {
+      width: 100%;
+      height: 150px;
+      padding: 10px;
+      font-size: 16px;
+      margin-top: 10px;
+      border: 1px solid #ddd;
+    }
+    .message {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      padding: 15px;
+      font-size: 16px;
+      background-color: #f0f8ff;
+      border: 1px solid #cce7ff;
+      color: #2a6592;
+      border-radius: 5px;
+      text-align: center;
+      box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+      z-index: 1000;
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <h1>Agent Check</h1>
+
+  <!-- Input for IDs -->
+  <label for="ids">Enter IDs (one per line):</label>
+  <textarea type="text" id="ids" placeholder="e.g. 2095273"></textarea>
+  <button onclick="checkAgents()">Check Agent</button>
+
+  <h2>Results</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Agent Found</th>
+      </tr>
+    </thead>
+    <tbody id="results">
+      <!-- Dynamic results will go here -->
+    </tbody>
+  </table>
+
+  <!-- Message box -->
+  <div id="message" class="message">All results have been displayed successfully!</div>
+
+  <script>
+    async function checkAgent(id) {
+      const url = `http://localhost:3000/check-agent?id=${id}`;
+      try {
+        const response = await fetch(url);
+        const data = await response.json();
+        return data.agentStatus;
+      } catch (error) {
+        console.error('Error checking agent for ID:', error);
+        return 'Error';
+      }
+    }
+
+    async function checkAgents() {
+      const idsInput = document.getElementById('ids');
+      const ids = idsInput.value.split('\n').map(id => id.trim()); // Split and clean input
+
+      const resultsTable = document.getElementById('results');
+      const messageBox = document.getElementById('message');
+      resultsTable.innerHTML = ''; // Clear previous results
+
+      for (const id of ids) {
+        if (id) { // Ensure non-empty IDs
+          const agentStatus = await checkAgent(id);
+          const row = document.createElement('tr');
+          row.innerHTML = `<td>${id}</td><td>${agentStatus}</td>`;
+          resultsTable.appendChild(row);
+        }
+      }
+
+      // Clear the input field after processing
+      idsInput.value = '';
+
+      // Show the message
+      messageBox.style.display = 'block';
+
+      // Use IntersectionObserver to detect when the message is visible
+      const observer = new IntersectionObserver((entries) => {
+        const [entry] = entries;
+        if (entry.isIntersecting) {
+          // Wait 5 seconds after the message is visible
+          setTimeout(() => {
+            messageBox.style.display = 'none'; // Hide message
+            observer.disconnect(); // Stop observing after hiding
+          }, 5000);
+        }
+      });
+
+      observer.observe(messageBox); // Start observing the message box
+    }
+  </script>
+</body>
+</html>
