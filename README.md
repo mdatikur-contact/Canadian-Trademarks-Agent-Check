@@ -29,7 +29,7 @@ As a data entry worker, I spent countless hours manually verifying agent informa
 
 ## 📸 Screenshot
 ![Agent Check Screenshot](https://github.com/user-attachments/assets/1a77ea69-fef5-47cb-8762-fc2ed23c6649)
-)
+
 
 ## 📋 How to Run the Project
 1. Clone this repository:
