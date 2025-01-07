@@ -46,11 +46,11 @@ Open the index.html file in your browser or run the backend server if required.
 🌟 Future Enhancements </br>
 Add support for international trademark databases.
 Improve the user interface for better accessibility.
-Introduce an option to export results as a CSV file.
+Introduce an option to export results as a CSV file.</br>
 💡 Lessons Learned</br>
 How small automation projects can drastically save time and effort.
 The importance of streamlining repetitive tasks for increased productivity.
-Building this project deepened my understanding of frontend-backend communication.
+Building this project deepened my understanding of frontend-backend communication.</br>
 🙌 Acknowledgment</br>
 This project is a testament to the transformative power of coding in real-life applications. It has not only optimized my workflow but also inspired me to continue solving everyday problems through technology.
 
