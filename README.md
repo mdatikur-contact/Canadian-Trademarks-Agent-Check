@@ -28,10 +28,47 @@ As a data entry worker, I spent countless hours manually verifying agent informa
 - **Backend:** API integration with Canadian Trademark Database (Localhost simulation in the demo)
 
 ## 📸 Screenshot
-![Agent Check Screenshot](https://github.com/user-attachments/assets/6f7d9291-5b57-4234-9392-ac513b422169)
-
+![Agent Check Screenshot](https://github.com/mdatikur-contact/Canadian-Trademarks-Agent-Check/blob/main/assets/agent-check-screenshot.png)
 
 ## 📋 How to Run the Project
 1. Clone this repository:
    ```bash
    git clone https://github.com/mdatikur-contact/Canadian-Trademarks-Agent-Check.git
+Navigate to the project directory:
+bash
+Copy code
+cd Canadian-Trademarks-Agent-Check
+Open the index.html file in your browser or run the backend server if required.
+🌟 Future Enhancements
+Add support for international trademark databases.
+Improve the user interface for better accessibility.
+Introduce an option to export results as a CSV file.
+💡 Lessons Learned
+How small automation projects can drastically save time and effort.
+The importance of streamlining repetitive tasks for increased productivity.
+Building this project deepened my understanding of frontend-backend communication.
+🙌 Acknowledgment
+This project is a testament to the transformative power of coding in real-life applications. It has not only optimized my workflow but also inspired me to continue solving everyday problems through technology.
+
+📧 Contact
+If you have any questions, suggestions, or ideas to improve this tool, feel free to reach out!
+
+Email: your.email@example.com
+GitHub: mdatikur-contact
+LinkedIn: Md Atikur Rahman
+🌟 Star This Repository
+If you find this project useful, please consider starring it on GitHub. Your support motivates me to build more amazing tools!
+
+
+
+### **How to Commit the README.md File**
+1. Save the above content into a file named `README.md`.
+2. Add the file to your repository:
+   ```bash
+   git add README.md
+Commit the file:
+
+git commit -m "Update README.md for Agent Check project"
+Push the changes to GitHub:
+```bash
+git push origin main
