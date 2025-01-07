@@ -35,15 +35,11 @@ As a data entry worker, I spent countless hours manually verifying agent informa
 1. Clone this repository:
    ```bash
    git clone https://github.com/mdatikur-contact/Canadian-Trademarks-Agent-Check.git
-Navigate to the project directory:
-
-
-cd Canadian-Trademarks-Agent-Check
-Run the project:
+   cd Canadian-Trademarks-Agent-Check
+   node index.js
 
 
 
-node index.js
 
 
 Open the index.html file in your browser or run the backend server if required.
