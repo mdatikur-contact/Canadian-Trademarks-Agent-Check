@@ -28,7 +28,7 @@ As a data entry worker, I spent countless hours manually verifying agent informa
 - **Backend:** API integration with Canadian Trademark Database (Localhost simulation in the demo)
 
 ## 📸 Screenshot
-![Agent Check Screenshot](https://github.com/mdatikur-contact/Canadian-Trademarks-Agent-Check/blob/main/assets/agent-check-screenshot.png)
+![Agent Check Screenshot](file:///C:/path-to-your-image/agent-check-screenshot.png)
 
 ## 📋 How to Run the Project
 1. Clone this repository:
