@@ -51,12 +51,7 @@ Building this project deepened my understanding of frontend-backend communicatio
 🙌 Acknowledgment
 This project is a testament to the transformative power of coding in real-life applications. It has not only optimized my workflow but also inspired me to continue solving everyday problems through technology.
 
-📧 Contact
-If you have any questions, suggestions, or ideas to improve this tool, feel free to reach out!
 
-Email: your.email@example.com
-GitHub: mdatikur-contact
-LinkedIn: Md Atikur Rahman
 🌟 Star This Repository
 If you find this project useful, please consider starring it on GitHub. Your support motivates me to build more amazing tools!
 
