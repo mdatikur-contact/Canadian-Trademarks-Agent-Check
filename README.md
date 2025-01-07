@@ -28,7 +28,7 @@ As a data entry worker, I spent countless hours manually verifying agent informa
 - **Backend:** API integration with Canadian Trademark Database (Localhost simulation in the demo)
 
 ## 📸 Screenshot
-(![Agent Check Screenshot](https://github.com/user-attachments/assets/1a77ea69-fef5-47cb-8762-fc2ed23c6649)
+![Agent Check Screenshot](https://github.com/user-attachments/assets/1a77ea69-fef5-47cb-8762-fc2ed23c6649)
 )
 
 ## 📋 How to Run the Project
